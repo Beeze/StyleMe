@@ -13,13 +13,19 @@ var bodyParser = require('body-parser'),
 var app = express();
 
 var home = require('./routes/index'),
+    login = require('./routes/login'),
     users = require('./routes/users');
 
 
 // view engine setup
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'hbs');
-
+app.set('views', __dirname + '/views');
+app.set('view options', {layout: false});
+//Configure express to use handlebars templates
+var hbs = exphbs.create({
+  defaultLayout: 'layout'
+});
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
 // uncomment after placing your favicon in /app
 //app.use(favicon(path.join(__dirname, 'app', 'favicon.ico')));
 
@@ -41,15 +47,14 @@ app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 app.set('port', process.env.PORT || 3000);
 
+
 //Pass the 'app' Object to each view
+login(app);
 
 //Add reference routes file to each URI
-app.use('/', home);
-app.use('/users', users);
 
-var hbs = exphbs.create({
-  defaultLayout: 'index'
-});
+app.use('/', home);
+app.use('/login', login);
 
 
 // error handlers
