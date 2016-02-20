@@ -9,7 +9,7 @@ $('.signInLocalButton').on 'mousedown', (e) ->
       $('button').contents().last()[0].textContent = Buttontext.replace("Sign In", "Sign Up")
       SubmitText = $('input[type="submit"]')[0].value#Replace text inside of submit Button
       $('input[type="submit"]')[0].value = SubmitText.replace('Log In', 'Sign Up')
-      form.find('p').prepend('<label class="emailInput">Email: </label><input type="email" class="emailInput" name="email">') #Add the email Field for signup
+      form.find('p').prepend('<label class="emailInput">Username </label><input type="text" class="emailInput" name="username">') #Add the email Field for signup
       $('.userInfoForm').attr('action', '/register') #Change endpoint hit on submit
       clickCounter = 1
 
