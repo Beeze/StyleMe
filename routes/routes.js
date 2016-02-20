@@ -1,4 +1,5 @@
 var Firebase = require('firebase');
+var YQL = require('yql');
 
 var ref = new Firebase('https://stylemeapi.firebaseio.com');
 ref.onAuth(authDataCallback);
@@ -10,7 +11,16 @@ module.exports = function (app) {
         var auth = userRef.getAuth();
 
         if(auth){
-            res.render('home', {username: auth.password.email})
+            res.render('home', {username: auth.password.email});
+
+            var query = new YQL('select * from weather.forecast where (location = 94089)');
+
+            query.exec(function(err, data) {
+                var location = data.query.results.channel.location;
+                var condition = data.query.results.channel.item.condition;
+
+                console.log('The current weather in ' + location.city + ', ' + location.region + ' is ' + condition.temp + ' degrees.');
+            });
         }
         else{
             res.render('home');
