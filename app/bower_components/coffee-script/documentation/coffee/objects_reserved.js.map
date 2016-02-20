@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "objects_reserved.js",
+  "sourceRoot": "",
+  "sources": [
+    "objects_reserved.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,CAAA,CAAE,UAAF,CAAa,CAAC,IAAd,CAAmB;IAAA,OAAA,EAAO,QAAP;GAAnB;;EAEA,GAAA,CAAI,MAAM,CAAC,OAAD,CAAV;AAFA"
+}

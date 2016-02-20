@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "expressions_assignment.js",
+  "sourceRoot": "",
+  "sources": [
+    "expressions_assignment.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,GAAA,GAAM,CAAC,GAAA,GAAM,CAAP,CAAA,GAAY,CAAC,GAAA,GAAM,CAAP,CAAZ,GAAwB,CAAC,KAAA,GAAQ,CAAT;AAA9B"
+}

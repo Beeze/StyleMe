@@ -1,0 +1,12 @@
+.userInfoForm {
+  display: none;
+  width: 50%; }
+  .userInfoForm .show {
+    display: block; }
+
+.signInArea {
+  text-align: center; }
+  .signInArea input {
+    width: 100%; }
+
+/*# sourceMappingURL=app.css.map */

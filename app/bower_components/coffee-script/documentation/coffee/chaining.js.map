@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "chaining.js",
+  "sourceRoot": "",
+  "sources": [
+    "chaining.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,CAAA,CAAE,MAAF,CACA,CAAC,KADD,CACO,SAAC,CAAD;WACL,CAAA,CAAE,MAAF,CACA,CAAC,MADD,CACQ,MADR,CAEA,CAAC,QAFD,CAEU,SAFV;EADK,CADP,CAKA,CAAC,GALD,CAKK,YALL,EAKmB,OALnB;AAAA"
+}

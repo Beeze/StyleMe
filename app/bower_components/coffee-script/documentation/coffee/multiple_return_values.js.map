@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "multiple_return_values.js",
+  "sourceRoot": "",
+  "sources": [
+    "multiple_return_values.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,aAAA,GAAgB,SAAC,QAAD;WAEd,CAAC,QAAD,EAAW,EAAX,EAAe,cAAf;EAFc;;EAIhB,MAAyB,aAAA,CAAc,cAAd,CAAzB,EAAC,aAAD,EAAO,aAAP,EAAa;AAJb"
+}

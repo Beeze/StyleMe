@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "existence.js",
+  "sourceRoot": "",
+  "sources": [
+    "existence.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,IAAoB,8CAAA,IAAc,gDAAlC;IAAA,SAAA,GAAY,KAAZ;;;EAEA,KAAA,GAAQ;;;IACR,QAAS;;;EAET,UAAA,kDAAa,OAAO;AALpB"
+}

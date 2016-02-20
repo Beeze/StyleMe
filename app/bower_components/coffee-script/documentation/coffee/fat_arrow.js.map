@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "fat_arrow.js",
+  "sourceRoot": "",
+  "sources": [
+    "fat_arrow.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,OAAA,GAAU,SAAC,QAAD,EAAW,IAAX;IACR,IAAC,CAAA,QAAD,GAAY;IACZ,IAAC,CAAA,IAAD,GAAQ;WAER,CAAA,CAAE,gBAAF,CAAmB,CAAC,EAApB,CAAuB,OAAvB,EAAgC,CAAA,SAAA,KAAA;aAAA,SAAC,KAAD;eAC9B,KAAC,CAAA,QAAQ,CAAC,QAAV,CAAmB,KAAC,CAAA,IAApB;MAD8B;IAAA,CAAA,CAAA,CAAA,IAAA,CAAhC;EAJQ;AAAV"
+}

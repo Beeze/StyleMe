@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "range_comprehensions.js",
+  "sourceRoot": "",
+  "sources": [
+    "range_comprehensions.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,SAAA;;AAAa;SAAe,+BAAf;mBAAA;AAAA;;;AAAb"
+}

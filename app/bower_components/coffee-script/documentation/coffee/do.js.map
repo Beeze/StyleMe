@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "do.js",
+  "sourceRoot": "",
+  "sources": [
+    "do.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;OACK,SAAC,QAAD;WACD,EAAE,CAAC,QAAH,CAAY,QAAZ,EAAsB,SAAC,GAAD,EAAM,QAAN;aACpB,OAAA,CAAQ,QAAR,EAAkB,QAAQ,CAAC,QAAT,CAAA,CAAlB;IADoB,CAAtB;EADC;AADL,OAAA,sCAAA;;OACM;AADN;AAAA"
+}

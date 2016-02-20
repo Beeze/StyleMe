@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "parallel_assignment.js",
+  "sourceRoot": "",
+  "sources": [
+    "parallel_assignment.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,OAAA,GAAY;;EACZ,SAAA,GAAY;;EAEZ,MAAuB,CAAC,SAAD,EAAY,OAAZ,CAAvB,EAAC,gBAAD,EAAU;AAHV"
+}

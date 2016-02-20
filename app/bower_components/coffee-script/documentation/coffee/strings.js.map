@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "strings.js",
+  "sourceRoot": "",
+  "sources": [
+    "strings.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,QAAA,GAAW;AAAX"
+}

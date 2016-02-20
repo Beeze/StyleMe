@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "heregexes.js",
+  "sourceRoot": "",
+  "sources": [
+    "heregexes.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,QAAA,GAAW;AAAX"
+}

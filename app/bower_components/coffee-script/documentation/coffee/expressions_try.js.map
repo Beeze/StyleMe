@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "expressions_try.js",
+  "sourceRoot": "",
+  "sources": [
+    "expressions_try.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,KAAA;AACE;aACE,WAAA,GAAc,OADhB;KAAA,cAAA;MAEM;aACJ,uBAAA,GAAwB,MAH1B;;MADF;AAAA"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "embedded.js",
+  "sourceRoot": "",
+  "sources": [
+    "embedded.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,EAAA,GAAK;;;AAAL"
+}

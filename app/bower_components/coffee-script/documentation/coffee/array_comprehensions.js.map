@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "array_comprehensions.js",
+  "sourceRoot": "",
+  "sources": [
+    "array_comprehensions.coffee"
+  ],
+  "names": [],
+  "mappings": ";AACA;AAAA,MAAA;;AAAA;AAAA,OAAA,qCAAA;;IAAA,GAAA,CAAI,IAAJ;AAAA;;EAGA,OAAA,GAAU,CAAC,QAAD,EAAW,QAAX,EAAqB,UAArB,EAAiC,OAAjC,EAA0C,MAA1C;;AACV,OAAA,mDAAA;;IAAA,IAAA,CAAK,CAAA,GAAI,CAAT,EAAY,IAAZ;AAAA;;EAGA,KAAA,GAAQ,CAAC,UAAD,EAAa,SAAb,EAAwB,WAAxB;;AACR,OAAA,yCAAA;;QAAgC,IAAA,KAAU;MAA1C,GAAA,CAAI,IAAJ;;AAAA;AARA"
+}

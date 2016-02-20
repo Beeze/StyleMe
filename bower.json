@@ -1,22 +1,14 @@
 {
-  "name": "StyleMe",
-  "description": "",
-  "main": "",
-  "authors": [
-    "beezebrown <m.brown298@gmail.com>"
-  ],
-  "license": "MIT",
-  "homepage": "https://github.com/Beeze/StyleMe",
-  "moduleType": [],
+  "name": "savemore",
   "private": true,
-  "ignore": [
-    "**/.*",
-    "node_modules",
-    "bower_components",
-    "test",
-    "tests"
-  ],
   "dependencies": {
-    "jquery": "~2.2.0"
+    "coffee-script": "coffeescript#~1.10.0",
+    "font-awesome": "fontawesome#~4.4.0",
+    "jquery": "~2.1.4",
+    "modernizr": "~2.8.3"
+  },
+  "devDependencies": {
+    "chai": "~3.2.0",
+    "mocha": "~2.3.0"
   }
 }

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "expansion.js",
+  "sourceRoot": "",
+  "sources": [
+    "expansion.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,IAAA,GAAO;;EAGP,MAAqB,IAAI,CAAC,KAAL,CAAW,GAAX,CAArB,EAAC,cAAD,EAAa;AAHb"
+}

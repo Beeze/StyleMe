@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "block_comment.js",
+  "sourceRoot": "",
+  "sources": [
+    "block_comment.coffee"
+  ],
+  "names": [],
+  "mappings": ";;AAAA;;;;;AAAA;;AAAA"
+}

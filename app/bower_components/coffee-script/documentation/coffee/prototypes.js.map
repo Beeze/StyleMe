@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "prototypes.js",
+  "sourceRoot": "",
+  "sources": [
+    "prototypes.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;EAAA,MAAM,CAAA,SAAE,CAAA,SAAR,GAAoB,SAAA;WAClB,IAAI,CAAC,OAAL,CAAa,IAAb,EAAmB,GAAnB;EADkB;AAApB"
+}

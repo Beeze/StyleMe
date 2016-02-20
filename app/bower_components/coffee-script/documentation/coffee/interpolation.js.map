@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "interpolation.js",
+  "sourceRoot": "",
+  "sources": [
+    "interpolation.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,MAAA,GAAS;;EACT,KAAA,GAAS,0BAAA,GAA4B;;EAErC,QAAA,GAAa,CAAE,EAAA,GAAK,CAAP,CAAA,GAAU;AAHvB"
+}

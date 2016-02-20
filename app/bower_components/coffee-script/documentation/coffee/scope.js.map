@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "scope.js",
+  "sourceRoot": "",
+  "sources": [
+    "scope.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,KAAA,GAAQ;;EACR,aAAA,GAAgB,SAAA;AACd,QAAA;IAAA,KAAA,GAAQ,CAAC;WACT,KAAA,GAAQ;EAFM;;EAGhB,KAAA,GAAQ,aAAA,CAAA;AAJR"
+}

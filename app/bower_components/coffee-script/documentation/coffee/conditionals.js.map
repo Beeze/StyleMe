@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "conditionals.js",
+  "sourceRoot": "",
+  "sources": [
+    "conditionals.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,IAA0B,OAA1B;IAAA,IAAA,GAAO,gBAAP;;;EAEA,IAAG,KAAA,IAAU,OAAb;IACE,UAAA,CAAA;IACA,SAAA,CAAA,EAFF;GAAA,MAAA;IAIE,MAAA,CAAA,EAJF;;;EAMA,IAAA,GAAU,MAAH,GAAe,GAAf,GAAwB;AAR/B"
+}

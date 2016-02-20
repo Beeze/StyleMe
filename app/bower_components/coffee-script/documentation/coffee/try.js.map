@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "try.js",
+  "sourceRoot": "",
+  "sources": [
+    "try.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;AAAA;IACE,kBAAA,CAAA;IACA,yBAAA,CAAA,EAFF;GAAA,cAAA;IAGM;IACJ,KAAA,CAAM,KAAN,EAJF;GAAA;IAME,OAAA,CAAA,EANF;;AAAA"
+}

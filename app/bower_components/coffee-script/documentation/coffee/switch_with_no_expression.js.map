@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "switch_with_no_expression.js",
+  "sourceRoot": "",
+  "sources": [
+    "switch_with_no_expression.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,KAAA,GAAQ;;EACR,KAAA;AAAQ,YAAA,KAAA;AAAA,aACD,KAAA,GAAQ,GADP;eACe;AADf,aAED,KAAA,GAAQ,GAFP;eAEe;AAFf,aAGD,KAAA,GAAQ,GAHP;eAGe;AAHf,aAID,KAAA,GAAQ,GAJP;eAIe;AAJf;eAKD;AALC;;AADR"
+}

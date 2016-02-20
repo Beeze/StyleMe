@@ -1,0 +1,14 @@
+.userInfoForm {
+  display: none;
+  width: 50%;
+  .show {
+    display: block;
+  }
+}
+
+.signInArea {
+  text-align: center;
+  input {
+    width: 100%;
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "soaks.js",
+  "sourceRoot": "",
+  "sources": [
+    "soaks.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,GAAA,gGAAmC,CAAE;AAArC"
+}

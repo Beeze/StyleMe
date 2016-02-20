@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "object_comprehensions.js",
+  "sourceRoot": "",
+  "sources": [
+    "object_comprehensions.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,QAAA,GAAW;IAAA,GAAA,EAAK,EAAL;IAAS,GAAA,EAAK,CAAd;IAAiB,GAAA,EAAK,EAAtB;;;EAEX,IAAA;;AAAO;SAAA,iBAAA;;mBACF,KAAD,GAAO,MAAP,GAAa;AADV;;;AAFP"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "comparisons.js",
+  "sourceRoot": "",
+  "sources": [
+    "comparisons.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,WAAA,GAAc;;EAEd,OAAA,GAAU,CAAA,GAAA,GAAM,WAAN,IAAM,WAAN,GAAoB,EAApB;AAFV"
+}

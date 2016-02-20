@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "object_extraction.js",
+  "sourceRoot": "",
+  "sources": [
+    "object_extraction.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA;;EAAA,SAAA,GACE;IAAA,QAAA,EAAU,kBAAV;IACA,OAAA,EAAU,kBADV;IAEA,IAAA,EACE;MAAA,IAAA,EAAQ,gBAAR;MACA,OAAA,EAAS,CACP,cADO,EAEP,uBAFO,CADT;KAHF;;;QASwC,UAAzC,MAAO,WAAA,kBAAM,SAAU,kBAAQ;AAVhC"
+}

@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "patterns_and_splats.js",
+  "sourceRoot": "",
+  "sources": [
+    "patterns_and_splats.coffee"
+  ],
+  "names": [],
+  "mappings": ";AAAA;AAAA,MAAA,kCAAA;IAAA;;EAAA,GAAA,GAAM;;EAEN,MAA6B,GAAG,CAAC,KAAJ,CAAU,EAAV,CAA7B,EAAC,aAAD,EAAO,iFAAP,EAAoB;AAFpB"
+}
