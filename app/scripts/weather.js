@@ -8,14 +8,22 @@
     });
     getlocation = function() {
       if (navigator.geolocation) {
-        navigator.geolocation.watchPosition(showPosition);
+        return navigator.geolocation.getCurrentPosition(showPosition);
       } else {
-        location.innerHTML = 'Geolocation is not supported by this browser.';
+        return location[0].innerHTML = "Geolocation not supported by browser";
       }
     };
     return showPosition = function(position) {
-      location.innerHTML = 'Latitude: ' + position.coords.latitude + "<br> Longitude: " + position.coords.longitude;
-      console.log(position);
+      var userLocal;
+      userLocal = {
+        lat: position.coords.latitude,
+        long: position.coords.longitude
+      };
+      location[0].innerHTML = "Lat: " + userLocal.lat + "Long: " + userLocal.long;
+      $.post('/weatherMe', {
+        data: userLocal,
+        dataType: 'json'
+      });
     };
   });
 

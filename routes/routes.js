@@ -1,5 +1,6 @@
 var Firebase = require('firebase');
 var YQL = require('yql');
+var geocoder = require('geocoder');
 
 var ref = new Firebase('https://stylemeapi.firebaseio.com');
 ref.onAuth(authDataCallback);
@@ -59,23 +60,12 @@ module.exports = function (app) {
         }, function(err, userData) {
             if (err) {
                 console.log(err);
+                res.redirect('/signin');
             }
             else {
-                ref.authWithPassword({
-                    email: User.email,
-                    password: User.password
-                },
-                function (err, authData) {
-                    if (err) {
-                        console.log(err);
-                    }
-                    else {
-                        console.log('yay');
-                    }
-                });
+                res.redirect(307, '/login');
             }
         });
-        res.redirect('/');
     });
 
     // logs user out of site, deleting them from the session, and returns to homepage
@@ -83,7 +73,27 @@ module.exports = function (app) {
         ref.unauth();
         res.redirect('/');
     });
+
+    app.post('/weatherMe', function(req, res){
+        lat = req.body.data.lat;
+        long = req.body.data.long;
+
+        geocoder.reverseGeocode(lat, long, function(err, data){
+            console.log(JSON.parse(JSON.stringify(data.results[0].address_components)));
+            addresses = JSON.parse(JSON.stringify(data.results[0].address_components));
+            for (address in addresses) {
+                if (address['types'] === 'postal_code'){
+                    console.log(address);
+                }
+
+            }
+        });
+
+        res.redirect('/');
+
+    });
 };
+
 
 function authDataCallback(authData) {
     if (authData) {
