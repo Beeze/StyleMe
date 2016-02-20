@@ -11,7 +11,6 @@ module.exports = function (app) {
         var auth = userRef.getAuth();
 
         if(auth){
-            res.render('home', {username: auth.password.email});
 
             var query = new YQL('select * from weather.forecast where (location = 94089)');
 
@@ -20,6 +19,7 @@ module.exports = function (app) {
                 var condition = data.query.results.channel.item.condition;
 
                 console.log('The current weather in ' + location.city + ', ' + location.region + ' is ' + condition.temp + ' degrees.');
+                res.render('home', {username: auth.password.email, city: location.city, state: location.region, temperature: condition.temp});
             });
         }
         else{
@@ -54,7 +54,8 @@ module.exports = function (app) {
 
         ref.createUser({
             email: User.email,
-            password: User.password
+            password: User.password,
+            username: User.username
         }, function(err, userData) {
             if (err) {
                 console.log(err);
@@ -71,9 +72,9 @@ module.exports = function (app) {
                     else {
                         console.log('yay');
                     }
-                })
+                });
             }
-        })
+        });
         res.redirect('/');
     });
 
