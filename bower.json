@@ -1,0 +1,22 @@
+{
+  "name": "StyleMe",
+  "description": "",
+  "main": "",
+  "authors": [
+    "beezebrown <m.brown298@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/Beeze/StyleMe",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.0"
+  }
+}
