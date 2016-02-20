@@ -12,13 +12,11 @@ module.exports = function (grunt) {
 
   // Time how long tasks take. Can help when optimizing build times
   require('time-grunt')(grunt);
-  grunt.loadNpmTasks('grunt-contrib-handlebars');
 
   // Automatically load required grunt tasks
   require('jit-grunt')(grunt, {
-      useminPrepare: 'grunt-usemin'
+    useminPrepare: 'grunt-usemin'
   });
-
   // Configurable paths
   var config = {
     app: 'app',
@@ -71,7 +69,7 @@ module.exports = function (grunt) {
             '<%= config.app %>/images/{,*/}*',
             '.tmp/scripts/{,*/}*.js'
           ],
-          port: 3000,
+          port: 9000,
           server: {
             baseDir: ['.tmp', config.app],
             routes: {
@@ -140,7 +138,7 @@ module.exports = function (grunt) {
     // Compiles ES6 with Babel
     babel: {
       options: {
-          sourceMap: true
+        sourceMap: true
       },
       dist: {
         files: [{
@@ -173,7 +171,7 @@ module.exports = function (grunt) {
       dist: {
         files: [{
           expand: true,
-          cwd: '<%= config.app %>/styles/scss',
+          cwd: '<%= config.app %>/styles',
           src: ['*.{scss,sass}'],
           dest: '.tmp/styles',
           ext: '.css'
@@ -182,7 +180,7 @@ module.exports = function (grunt) {
       server: {
         files: [{
           expand: true,
-          cwd: '<%= config.app %>/styles/scss',
+          cwd: '<%= config.app %>/styles',
           src: ['*.{scss,sass}'],
           dest: '.tmp/styles',
           ext: '.css'
@@ -205,7 +203,7 @@ module.exports = function (grunt) {
           expand: true,
           cwd: '.tmp/styles/',
           src: '{,*/}*.css',
-          dest: '<%= config.app %>/styles/css'
+          dest: '.tmp/styles/'
         }]
       }
     },
@@ -217,7 +215,7 @@ module.exports = function (grunt) {
         ignorePath: /^(\.\.\/)*\.\./
       },
       sass: {
-        src: ['<%= config.app %>/styles/*.{scss,sass}'],
+        src: ['<%= config.app %>/styles/{,*/}*.{scss,sass}'],
         ignorePath: /^(\.\.\/)+/
       }
     },
@@ -226,8 +224,8 @@ module.exports = function (grunt) {
     filerev: {
       dist: {
         src: [
-          '<%= config.dist %>/.tmp/scripts/{,*/}*.js',
-          '<%= config.dist %>/.tmp/styles/{,*/}*.css',
+          '<%= config.dist %>/scripts/{,*/}*.js',
+          '<%= config.dist %>/styles/{,*/}*.css',
           '<%= config.dist %>/images/{,*/}*.*',
           '<%= config.dist %>/styles/fonts/{,*/}*.*',
           '<%= config.dist %>/*.{ico,png}'
