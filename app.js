@@ -34,10 +34,10 @@ app.use(require('node-sass-middleware')({
   sourceMap: true
 }));
 app.use(express.static(path.join(__dirname + 'app')));
-app.use('/scripts', express.static(__dirname + '/scripts'));
-app.use('/app', express.static(__dirname + '/app'));
-app.use('/cloud', express.static(__dirname + 'Parse/cloud'));
 app.use(express.static(path.join(__dirname, 'app')));
+app.use('/app', express.static(__dirname + '/app'));
+app.use('/scripts', express.static(__dirname + '/scripts'));
+app.use('/bower_components',  express.static(__dirname + '/bower_components'));
 
 app.set('port', process.env.PORT || 3000);
 

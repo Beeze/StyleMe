@@ -6,32 +6,32 @@
       <link rel="stylesheet" href="/bower_components/foundation/css/foundation.min.css">
   </head>
   <body>
-  <div class="title-bar" data-responsive-toggle="main-menu" data-hide-for="medium">
-      <button class="menu-icon" type="button" data-toggle></button>
-      <div class="title-bar-title">Menu</div>
-  </div>
-
-  <div class="top-bar" id="main-menu">
-      <div class="top-bar-left">
-          <ul class="dropdown menu" data-dropdown-menu>
-              <li class="menu-text">Site Title</li>
-          </ul>
-      </div>
-      <div class="top-bar-right">
-          <ul class="menu" data-responsive-menu="drilldown medium-dropdown">
-              <li class="has-submenu">
-                  <a href="#">One</a>
-                  <ul class="submenu menu vertical" data-submenu>
-                      <li><a href="#">One</a></li>
-                      <li><a href="#">Two</a></li>
-                      <li><a href="#">Three</a></li>
+  <nav class="top-bar" data-topbar role="navigation">
+      <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+      <section class="top-bar-section">
+          <!-- Right Nav Section -->
+          <ul class="left">
+              <li class=""><a href="index.html">Home</a></li>
+              <li class="divider"></li>
+              <li class=""><a href="events.html">Events</a></li>
+              <li class="divider"></li>
+              <li class=""><a href="teams.html">Teams</a></li>
+              <li class="divider"></li>
+              <li class="has-dropdown">
+                  <a href="#">About</a>
+                  <ul class="dropdown">
+                      <li><a href="#">First Dash</a></li>
+                      <li class="active"><a href="#">API</a></li>
                   </ul>
               </li>
-              <li><a href="#">Two</a></li>
-              <li><a href="#">Three</a></li>
           </ul>
-      </div>
-  </div>
-
+          <ul class="social-icons">
+              <li><a href=""><i class="fi-telephone"></i></a></li>
+              <li><a href=""><i class="fi-social-linkedin"></i></a></li>
+              <li><a href=""><i class="fi-social-twitter"></i></a></li>
+              <li><a href=""><i class="fi-social-facebook"></i></a></li>
+          </ul>
+      </section>
+  </nav>
   </body>
 </html>
