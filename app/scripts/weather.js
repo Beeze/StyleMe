@@ -19,7 +19,6 @@
         lat: position.coords.latitude,
         long: position.coords.longitude
       };
-      location[0].innerHTML = "Lat: " + userLocal.lat + "Long: " + userLocal.long;
       $.post('/weatherMe', {
         data: userLocal,
         dataType: 'json'

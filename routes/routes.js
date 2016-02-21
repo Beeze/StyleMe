@@ -93,18 +93,97 @@ module.exports = function (app) {
                         else{
                             var userlocale = data.query.results.channel.location;
                             var condition = data.query.results.channel.item.condition;
-                            console.log('The current weather in ' + userlocale.city + ', ' + userlocale.region + ' is ' + condition.temp + ' degrees.');
-                            res.render('home', {username: auth.password.email, city: userlocale.city, state: userlocale.region, temperature: condition.temp});
+                            //console.log('The current weather in ' + userlocale.city + ', ' + userlocale.region + ' is ' + condition.temp + ' degrees.');
+                            //res.render('home', {username: auth.password.email, city: userlocale.city, state: userlocale.region, temperature: condition.temp});
                             //res.redirect('/');
+                            res.redirect(
+                                "/weatherMe/?" +
+                                    "city=" + userlocale.city +
+                                    "&state=" + userlocale.region +
+                                    "&temp="  + condition.temp +
+                                    "&skies=" + condition.code
+                            );
                         }
                     });
                 }
             });
         });
     });
+
+    app.get('/weatherMe/?', function(req, res){
+        var city = req.query.city;
+        var state = req.query.state;
+        var temp = req.query.temp;
+        var skies = req.query.skies;
+
+        console.log(skies);
+        var weather =  forecast(skies);
+        
+    });
 };
 
 
+function forecast(weatherCode){
+
+    switch(weatherCode){
+        case '1':
+        case '2':
+        case '3':
+        case '4':
+        case '5':
+        case '6':
+        case '7':
+        case '8':
+        case '9':
+        case '10':
+        case '11':
+        case '12':
+        case '13':
+        case '14':
+        case '15':
+        case '16':
+        case '17':
+        case '18':
+        case '35':
+        case '37':
+        case '38':
+        case '39':
+        case '40':
+        case '41':
+        case '42':
+        case '43':
+        case '45':
+        case '46':
+        case '47':
+            return("Precipitation");
+            break;
+        case '19':
+        case '20':
+        case '21':
+        case '22':
+        case '23':
+        case '24':
+        case '25':
+            return("nippy");
+            break;
+        case '26':
+        case '27':
+        case '28':
+        case '29':
+        case '30':
+            return("cloudy");
+            break;
+        case '31':
+        case '32':
+        case '33':
+        case '34':
+        case '36':
+            return("warm");
+            break;
+        default: return("not available");
+    }
+
+}
 function authDataCallback(authData) {
     if (authData) {
         console.log("User " + authData.uid + " is logged in with " + authData.provider);

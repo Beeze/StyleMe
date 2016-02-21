@@ -5,10 +5,12 @@
     <div class="panel panel-default">
         <div class="panel-heading">
             <h1 class="panel-title">Weather Information</h1>
-            <h2>It's currently {{temperature}} in {{city}}, {{state}}</h2>
-            <button class="get-location">Get that location!</button>
+            {{#if temperature}}
+                    <h2 class="temp-in-city">{{city}}, {{state}}. Temp: {{temperature}} </h2>
+            {{/if}}
+            <button class="get-location">What's the weather like?</button>
         </div>
-            <h2 class="lat-long"></h2>
+        <h2 class="lat-long"></h2>
         <div class="panel-body">
 
         </div>
