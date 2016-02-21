@@ -118,7 +118,32 @@ module.exports = function (app) {
 
         console.log(skies);
         var weather =  forecast(skies);
-        
+
+        if (weather == "precipitation" || "nippy"){
+            if(temp <= '35'){
+                //winter clothes (hats, gloves, winter jackets, boots, etc.)
+            }
+            else if (temp > '35' && temp < '50' ){
+                //fall clothes (jeans, hoodies, jogging pants, etc.)
+            }
+            else {
+                //hoodies, jeans and fleeces
+            }
+        }
+        else if(weather == "cloudy"){
+            if (temp <= '35'){
+                //winter clothes (hats, gloves, winter jackets, boots, etc.)
+            }
+            else if (temp > '35' && temp < '50'){
+                //fall clothes (jeans, hoodies, jogging pants, etc.)
+            }
+            else {
+                //hoodies, jeans and fleeces
+            }
+        }
+        else if(weather == "warm"){
+            //tshirts, shorts, flops, tennis shoes
+        }
     });
 };
 
