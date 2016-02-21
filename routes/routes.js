@@ -12,16 +12,7 @@ module.exports = function (app) {
         var auth = userRef.getAuth();
 
         if(auth){
-
-            var query = new YQL('select * from weather.forecast where (location = 94089)');
-
-            query.exec(function(err, data) {
-                var location = data.query.results.channel.location;
-                var condition = data.query.results.channel.item.condition;
-
-                console.log('The current weather in ' + location.city + ', ' + location.region + ' is ' + condition.temp + ' degrees.');
-                res.render('home', {username: auth.password.email, city: location.city, state: location.region, temperature: condition.temp});
-            });
+            res.render('home', {username: auth.password.email});
         }
         else{
             res.render('home');
@@ -50,19 +41,27 @@ module.exports = function (app) {
         var User = {
             username: req.body.username,
             password: req.body.password,
-            email: req.body.email
+            email: req.body.email,
+            zip: req.body.zipInput
         };
+        console.log(req.body);
 
         ref.createUser({
             email: User.email,
-            password: User.password,
-            username: User.username
+            password: User.password
+
         }, function(err, userData) {
             if (err) {
                 console.log(err);
                 res.redirect('/signin');
             }
             else {
+                locationRef = ref.child('location');
+                console.log('swag');
+                locationRef.push({
+                   email: User.email,
+                    zip: User.zip
+                });
                 res.redirect(307, '/login');
             }
         });
@@ -75,22 +74,33 @@ module.exports = function (app) {
     });
 
     app.post('/weatherMe', function(req, res){
-        lat = req.body.data.lat;
-        long = req.body.data.long;
 
-        geocoder.reverseGeocode(lat, long, function(err, data){
-            console.log(JSON.parse(JSON.stringify(data.results[0].address_components)));
-            addresses = JSON.parse(JSON.stringify(data.results[0].address_components));
-            for (address in addresses) {
-                if (address['types'] === 'postal_code'){
-                    console.log(address);
+        locationRef = ref.child('location');
+        var auth = userRef.getAuth();
+        email = auth.password.email;
+
+        locationRef.on('value', function(snapshot){
+            snapshot.forEach(function(location){
+                var value = location.val();
+                if(value.email == email) { //We've found a match!
+                    zip = value.zip;
+                    var query = new YQL('select * from weather.forecast where (location = ' + zip + ')');
+
+                    query.exec(function (err, data) {
+                        if(err){
+                            res.send(err);
+                        }
+                        else{
+                            var userlocale = data.query.results.channel.location;
+                            var condition = data.query.results.channel.item.condition;
+                            console.log('The current weather in ' + userlocale.city + ', ' + userlocale.region + ' is ' + condition.temp + ' degrees.');
+                            res.render('home', {username: auth.password.email, city: userlocale.city, state: userlocale.region, temperature: condition.temp});
+                            //res.redirect('/');
+                        }
+                    });
                 }
-
-            }
+            });
         });
-
-        res.redirect('/');
-
     });
 };
 

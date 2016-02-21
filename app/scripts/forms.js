@@ -14,11 +14,13 @@
         $('button').contents().last()[0].textContent = Buttontext.replace("Sign In", "Sign Up");
         SubmitText = $('input[type="submit"]')[0].value;
         $('input[type="submit"]')[0].value = SubmitText.replace('Log In', 'Sign Up');
+        form.find('p').prepend('<label class="zipInput">Zip</label><input type="text" class="zipInput" name="zipInput">');
         form.find('p').prepend('<label class="emailInput">Username </label><input type="text" class="emailInput" name="username">');
         $('.userInfoForm').attr('action', '/register');
         return clickCounter = 1;
       } else {
         $('.emailInput').remove();
+        $('.zipInput').remove();
         text = $('button').contents().last()[0].textContent;
         $('button').contents().last()[0].textContent = text.replace("Sign Up", "Sign In");
         SubmitText = $('input[type="submit"]')[0].value;
